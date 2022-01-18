@@ -133,4 +133,7 @@
     - an AI research platform for benchmarking algorithm-hardware performance and energy efficiency trade-offs.
     - quality-of-flight (QoF) metrics
     - AirSim for sim and crazyflie for real
+  - [RotorS---A Modular Gazebo MAV Simulator Framework](https://github.com/ethz-asl/rotors_simulator), 2016
+  - [FlightGoogles](https://flightgoggles.mit.edu/), 2019
+  - [Flightmare: A Flexible Quadrotor Simulator](https://uzh-rpg.github.io/flightmare/), 2021
   - [A Survey of UAV Simulation With Reinforcement Learning](https://www.chenshiyu.top/blog/2020/05/25/A-Survey-of-UAV-Simulation-With-Reinforcement-Learning/), blog
