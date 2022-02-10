@@ -14,9 +14,14 @@
 
 ### Multirotor
 
+- [First Results in Detecting and Avoiding Frontal Obstacles from a Monocular Camera for Micro Unmanned Aerial Vehicles](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6630807), 2013
+  - uses SURF feature matches in combination with template matching to compare relative obstacle sizes with different image spacing
+  - 20 successful real flight experiments using Parrot AR.Drone
+
 ### Fixed-wing
 
-### Flapping-wing
+- [Research on obstacle avoidance technology of fixed wing formation based on improved artificial potential field method with stereo vision](https://www.matec-conferences.org/articles/matecconf/pdf/2021/05/matecconf_cscns20_07007.pdf), 2020
+  - improved artificial potential field method
 
 ## Learning-based method
 
@@ -126,6 +131,13 @@
       - lower layer deals with the global information (long-term strategy)
       - B-spline curve approach is applied for on-line path smoothing
 - Flapping-wing
+  - [Vision-based obstacle avoidance for flapping-wing aerial vehicles](http://scis.scichina.com/en/2020/170208.pdf), 2020
+    - binocular vision for depth (640 × 480, 70 deg FoV)
+    - Its total weight is 420 g, and the load weight is 170 g
+    - single-shot multi-box detector based on deep learning (MobileNet architecture, 34.7Mb model)
+    - Raspberry Pi 3b+ with Intel neural network acceleration bar
+    - steering angle control using reactive method
+    - 10 Hz but flight speed is only 1.5m/s
 - Simulator
   - [AirSim: High-Fidelity Visual and Physical Simulation for Autonomous Vehicles](https://link.springer.com/chapter/10.1007/978-3-319-67361-5_40), 2017
     - built on Unreal Engine that offers physically and visually realistic simulations for both of these goals
@@ -137,3 +149,31 @@
   - [FlightGoogles](https://flightgoggles.mit.edu/), 2019
   - [Flightmare: A Flexible Quadrotor Simulator](https://uzh-rpg.github.io/flightmare/), 2021
   - [A Survey of UAV Simulation With Reinforcement Learning](https://www.chenshiyu.top/blog/2020/05/25/A-Survey-of-UAV-Simulation-With-Reinforcement-Learning/), blog
+
+## Flapping wing Obstacle avoidance
+
+- [Optical Flow on a Flapping Wing Robot](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5354337), 2009
+  - Optical Flow, indoor
+  - 7 gram commercially available ornithopter airframe
+  - on-board camera and CPU module with mass of 2.5 grams and 2.6 gram battery
+  - black-and-white at 160x120
+  - low resolution such as 18x13 is adequate
+  - optic flow vectors are oscillating at around 11-12Hz
+  - he pitch range induced by flapping is estimated to be ±5◦
+- [First Autonomous Multi-Room Exploration with an Insect-Inspired Flapping Wing Vehicle](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8460702), 2018
+  - 4 g stereo vision system
+  - DelFly Explorer
+- [Stereo Vision for Flapping Wing MAVs: Design of an Obstacle Avoidance System](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.863.3352&rep=rep1&type=pdf), 2012
+  - S. Tijmons, Master Thesis, TU Delft
+  - literature in the field of computational stereo vision.
+  - the first time it has been investigated what the requirements are for a stereo vision system to do successful stereo vision-based obstacle avoidance on FWMAVs
+  - development of a systematical way to use the 3D information extracted by the stereo vision algorithm in order to find a guaranteed collision-free flight path.
+  - giving an indication on the usefulness of stereo vision based on multiple experiments
+  - The DelFly II successfully avoided the walls in an indoor office space of 7.3×8.2m for more than 72 seconds
+- [A Tailless Flapping Wing MAV Performing Monocular Visual Servoing Tasks](https://sci-hub.se/https://doi.org/10.1142/S2301385020500235), 2020
+  - Monocular
+  - ∼30-gram tailless flapping wing robot
+- [Obstacle Avoidance Strategy using Onboard Stereo Vision on a Flapping Wing MAV](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7919189), 2017
+  - stereo vision
+  - 20-gram flapping wing MAV DelFly Explorer
+- [The ROBUR project: towards an autonomous flapping-wing animat](https://www.researchgate.net/profile/Jean-Baptiste-Mouret/publication/228973712_The_ROBUR_project_towards_an_autonomous_flapping-wing_animat/links/09e415062fa7b4bd09000000/The-ROBUR-project-towards-an-autonomous-flapping-wing-animat.pdf), 2006
